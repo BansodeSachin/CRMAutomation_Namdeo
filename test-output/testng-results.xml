@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" ignored="0" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CRM Test Suite" duration-ms="30757" started-at="2020-04-09T07:53:03 EDT" finished-at="2020-04-09T07:53:34 EDT">
+    <groups>
+    </groups>
+    <test name="Test on REST API" duration-ms="4085" started-at="2020-04-09T07:53:03 EDT" finished-at="2020-04-09T07:53:07 EDT">
+      <class name="com.crm.api.APIRequestTest">
+        <test-method status="PASS" signature="testDemo()[pri:0, instance:com.crm.api.APIRequestTest@51e2adc7]" name="testDemo" duration-ms="14" started-at="2020-04-09T07:53:03 EDT" finished-at="2020-04-09T07:53:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDemo -->
+        <test-method status="PASS" signature="test_DELETERequest()[pri:0, instance:com.crm.api.APIRequestTest@51e2adc7]" name="test_DELETERequest" duration-ms="3311" started-at="2020-04-09T07:53:03 EDT" finished-at="2020-04-09T07:53:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_DELETERequest -->
+        <test-method status="PASS" signature="test_GETRequest()[pri:0, instance:com.crm.api.APIRequestTest@51e2adc7]" name="test_GETRequest" duration-ms="427" started-at="2020-04-09T07:53:06 EDT" finished-at="2020-04-09T07:53:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_GETRequest -->
+        <test-method status="PASS" signature="test_POSTRequest()[pri:0, instance:com.crm.api.APIRequestTest@51e2adc7]" name="test_POSTRequest" duration-ms="211" started-at="2020-04-09T07:53:07 EDT" finished-at="2020-04-09T07:53:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_POSTRequest -->
+        <test-method status="PASS" signature="test_PUTRequest()[pri:0, instance:com.crm.api.APIRequestTest@51e2adc7]" name="test_PUTRequest" duration-ms="42" started-at="2020-04-09T07:53:07 EDT" finished-at="2020-04-09T07:53:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_PUTRequest -->
+      </class> <!-- com.crm.api.APIRequestTest -->
+    </test> <!-- Test on REST API -->
+    <test name="Test on CRM UI Automation" duration-ms="26492" started-at="2020-04-09T07:53:07 EDT" finished-at="2020-04-09T07:53:34 EDT">
+      <class name="com.crm.ui.CRMAppAutomationTest">
+        <test-method status="FAIL" signature="initialize()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@3aeaafa6]" name="initialize" is-config="true" duration-ms="26390" started-at="2020-04-09T07:53:07 EDT" finished-at="2020-04-09T07:53:34 EDT">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.crm.ui.Base.initializeDriver(Base.java:32)
+at com.crm.ui.CRMAppAutomationTest.initialize(CRMAppAutomationTest.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="SKIP" signature="addCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@3aeaafa6]" name="addCRMCustomer" duration-ms="0" started-at="2020-04-09T07:53:34 EDT" finished-at="2020-04-09T07:53:34 EDT">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.crm.ui.Base.initializeDriver(Base.java:32)
+at com.crm.ui.CRMAppAutomationTest.initialize(CRMAppAutomationTest.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCRMCustomer -->
+        <test-method status="SKIP" signature="deleteCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@3aeaafa6]" name="deleteCRMCustomer" duration-ms="0" started-at="2020-04-09T07:53:34 EDT" finished-at="2020-04-09T07:53:34 EDT">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.crm.ui.Base.initializeDriver(Base.java:32)
+at com.crm.ui.CRMAppAutomationTest.initialize(CRMAppAutomationTest.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCRMCustomer -->
+        <test-method status="SKIP" signature="updateCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@3aeaafa6]" name="updateCRMCustomer" duration-ms="0" started-at="2020-04-09T07:53:34 EDT" finished-at="2020-04-09T07:53:34 EDT">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EUF29Q1', ip: '169.254.217.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x01080C83+1707139]
+Ordinal0 [0x00FE68F1+1075441]
+Ordinal0 [0x00F5DFC9+516041]
+Ordinal0 [0x00F5687B+485499]
+Ordinal0 [0x00F56499+484505]
+Ordinal0 [0x00F55D96+482710]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5CD25+511269]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F5B5AE+505262]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F59E1C+499228]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F594B7+496823]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F55A3B+481851]
+Ordinal0 [0x00F553AC+480172]
+Ordinal0 [0x00F555D5+480725]
+Ordinal0 [0x00F55035+479285]
+Ordinal0 [0x00F51B5C+465756]
+Ordinal0 [0x00F54FE8+479208]
+Ordinal0 [0x00F54EC4+478916]
+Ordinal0 [0x00F5ECA0+519328]
+Ordinal0 [0x00F0CA67+182887]
+Ordinal0 [0x00F0BDDD+179677]
+Ordinal0 [0x00F09D4B+171339]
+Ordinal0 [0x00EF1D4A+73034]
+Ordinal0 [0x00EF2DC0+77248]
+Ordinal0 [0x00EF2D59+77145]
+Ordinal0 [0x00FFBB67+1162087]
+GetHandleVerifier [0x0111A966+508998]
+GetHandleVerifier [0x0111A6A4+508292]
+GetHandleVerifier [0x0112F7B7+594583]
+GetHandleVerifier [0x0111B1D6+511158]
+Ordinal0 [0x00FF402C+1130540]
+Ordinal0 [0x00FFD4CB+1168587]
+Ordinal0 [0x00FFD633+1168947]
+Ordinal0 [0x01015B35+1268533]
+BaseThreadInitThunk [0x76A90419+25]
+RtlGetAppContainerNamedObjectPath [0x776B662D+237]
+RtlGetAppContainerNamedObjectPath [0x776B65FD+189]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.crm.ui.Base.initializeDriver(Base.java:32)
+at com.crm.ui.CRMAppAutomationTest.initialize(CRMAppAutomationTest.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCRMCustomer -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@3aeaafa6]" name="tearDown" is-config="true" duration-ms="-1586433214290" started-at="2020-04-09T07:53:34 EDT" finished-at="1969-12-31T19:00:00 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.ui.CRMAppAutomationTest -->
+    </test> <!-- Test on CRM UI Automation -->
+  </suite> <!-- CRM Test Suite -->
+</testng-results>
