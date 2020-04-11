@@ -22,7 +22,7 @@ public class Base {
 	public WebDriver initializeDriver() throws IOException {
 		
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("E:\\Sachin Docs\\EclipseWorkspace30-04-2018\\CRMAutomation\\src\\test\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\91889\\Desktop\\vishal phone data\\Testing\\Repo2\\CRMAutomation_Namdeo\\src\\test\\resources\\data.properties");
 		
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
