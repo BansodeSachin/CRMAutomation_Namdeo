@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [CRM Test Suite]">
-  <test thread-count="5" name="Test on CRM UI Automation(failed)">
+  <test thread-count="5" name="Test on CRM UI Automation using Cucumber(failed)">
     <classes>
-      <class name="com.crm.ui.CRMAppAutomationTest">
+      <class name="com.crm.cucumberOptions.TestRunner">
         <methods>
-          <include name="tearDown"/>
-          <include name="initialize"/>
-          <include name="updateCRMCustomer"/>
-          <include name="addCRMCustomer"/>
-          <include name="deleteCRMCustomer"/>
+          <include name="setUpClass"/>
+          <include name="feature"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.crm.ui.CRMAppAutomationTest -->
+      </class> <!-- com.crm.cucumberOptions.TestRunner -->
     </classes>
-  </test> <!-- Test on CRM UI Automation(failed) -->
+  </test> <!-- Test on CRM UI Automation using Cucumber(failed) -->
 </suite> <!-- Failed suite [CRM Test Suite] -->

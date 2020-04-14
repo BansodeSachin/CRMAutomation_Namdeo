@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.ui.CRMAppUpdateTest">
+      <class name="com.crm.cucumberOptions.TestRunner">
         <methods>
-          <include name="tearDown"/>
-          <include name="updateCRMCustomer"/>
-          <include name="initialize"/>
+          <include name="setUpClass"/>
+          <include name="feature"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.crm.ui.CRMAppUpdateTest -->
+      </class> <!-- com.crm.cucumberOptions.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

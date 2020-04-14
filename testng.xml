@@ -12,5 +12,12 @@
       <class name="com.crm.ui.CRMAppAutomationTest"/>
     </classes>
   </test> 
+  
+  <!-- <test name="Test on CRM UI Automation using Cucumber">
+    <classes>
+      <class name="com.crm.cucumberOptions.TestRunner"/>
+    </classes>
+  </test> -->
+    
     
 </suite> <!-- Suite -->
