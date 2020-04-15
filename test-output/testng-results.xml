@@ -1,57 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="CRM Test Suite" duration-ms="34607" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:58:22 IST">
+  <suite name="Default suite" duration-ms="16847" started-at="2020-04-16T02:01:56 IST" finished-at="2020-04-16T02:02:13 IST">
     <groups>
     </groups>
-    <test name="Test on REST API" duration-ms="4807" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:57:52 IST">
-      <class name="com.crm.api.APIRequestTest">
-        <test-method status="PASS" signature="testDemo()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="testDemo" duration-ms="14" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:57:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDemo -->
-        <test-method status="PASS" signature="test_DELETERequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_DELETERequest" duration-ms="3809" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:57:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_DELETERequest -->
-        <test-method status="PASS" signature="test_GETRequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_GETRequest" duration-ms="146" started-at="2020-04-14T13:57:51 IST" finished-at="2020-04-14T13:57:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GETRequest -->
-        <test-method status="PASS" signature="test_POSTRequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_POSTRequest" duration-ms="356" started-at="2020-04-14T13:57:51 IST" finished-at="2020-04-14T13:57:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_POSTRequest -->
-        <test-method status="PASS" signature="test_PUTRequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_PUTRequest" duration-ms="375" started-at="2020-04-14T13:57:51 IST" finished-at="2020-04-14T13:57:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_PUTRequest -->
-      </class> <!-- com.crm.api.APIRequestTest -->
-    </test> <!-- Test on REST API -->
-    <test name="Test on CRM UI Automation" duration-ms="29600" started-at="2020-04-14T13:57:52 IST" finished-at="2020-04-14T13:58:22 IST">
+    <test name="Default test" duration-ms="16847" started-at="2020-04-16T02:01:56 IST" finished-at="2020-04-16T02:02:13 IST">
       <class name="com.crm.ui.CRMAppAutomationTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="initialize" is-config="true" duration-ms="8411" started-at="2020-04-14T13:57:52 IST" finished-at="2020-04-14T13:58:00 IST">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="initialize" is-config="true" duration-ms="2116" started-at="2020-04-16T02:01:56 IST" finished-at="2020-04-16T02:01:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="addCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="addCRMCustomer" duration-ms="12059" started-at="2020-04-14T13:58:00 IST" finished-at="2020-04-14T13:58:13 IST">
+        <test-method status="PASS" signature="addCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="addCRMCustomer" duration-ms="6190" started-at="2020-04-16T02:01:59 IST" finished-at="2020-04-16T02:02:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCRMCustomer -->
-        <test-method status="PASS" signature="deleteCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="deleteCRMCustomer" duration-ms="2468" started-at="2020-04-14T13:58:13 IST" finished-at="2020-04-14T13:58:15 IST">
+        <test-method status="PASS" signature="deleteCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="deleteCRMCustomer" duration-ms="2312" started-at="2020-04-16T02:02:05 IST" finished-at="2020-04-16T02:02:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCRMCustomer -->
-        <test-method status="PASS" signature="updateCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="updateCRMCustomer" duration-ms="6376" started-at="2020-04-14T13:58:15 IST" finished-at="2020-04-14T13:58:21 IST">
+        <test-method status="PASS" signature="updateCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="updateCRMCustomer" duration-ms="6058" started-at="2020-04-16T02:02:07 IST" finished-at="2020-04-16T02:02:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateCRMCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="tearDown" is-config="true" duration-ms="273" started-at="2020-04-14T13:58:21 IST" finished-at="2020-04-14T13:58:22 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="tearDown" is-config="true" duration-ms="106" started-at="2020-04-16T02:02:13 IST" finished-at="2020-04-16T02:02:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.ui.CRMAppAutomationTest -->
-    </test> <!-- Test on CRM UI Automation -->
-  </suite> <!-- CRM Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

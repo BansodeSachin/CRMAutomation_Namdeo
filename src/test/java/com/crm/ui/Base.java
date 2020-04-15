@@ -18,30 +18,52 @@ public class Base {
 
 	public static WebDriver driver = null;
 	public static Properties prop = null;
+	private static String OS = System.getProperty("os.name").toLowerCase();
 	
 	public WebDriver initializeDriver() throws IOException {
 		
 		prop = new Properties();
-		//FileInputStream fis = new FileInputStream("C:\\Users\\91889\\Desktop\\vishal phone data\\Testing\\Repo2\\CRMAutomation_Namdeo\\src\\test\\resources\\data.properties");
 		FileInputStream fis = new FileInputStream("src/test/resources/data.properties");
 		
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-			driver = new ChromeDriver();
+		
+		if(isWindows()) {
 			
-		} else if(browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
-			driver = new FirefoxDriver();
+			if(browserName.equals("chrome")) {
+				System.setProperty("webdriver.chrome.driver", "E://chromedriver.exe");
+				driver = new ChromeDriver();
+				
+			} else if(browserName.equals("firefox")) {
+				System.setProperty("webdriver.gecko.driver", "E://geckodriver.exe");
+				driver = new FirefoxDriver();
+			} else {
+				System.setProperty("webdriver.ie.driver", "E://IEDriverServer.exe");
+				driver = new InternetExplorerDriver();
+			}
+			
+		} else if(isMac()) {
+			System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+			driver = new ChromeDriver();
 		} else {
-			System.setProperty("webdriver.ie.driver", "src/test/resources/IEDriverServer.exe");
-			driver = new InternetExplorerDriver();
+			System.out.println("This Program is not suitable for your operating System...");
 		}
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
+	}
+	
+	public static boolean isWindows() {
+
+		return (OS.indexOf("win") >= 0);
+
+	}
+
+	public static boolean isMac() {
+
+		return (OS.indexOf("mac") >= 0);
+
 	}
 	
 	public void getScreenshot(String result) throws IOException {
