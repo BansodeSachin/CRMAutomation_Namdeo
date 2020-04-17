@@ -2,12 +2,17 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="CRM Test Suite" duration-ms="131969" started-at="2020-04-17T13:05:37 IST" finished-at="2020-04-17T13:07:49 IST">
+=======
+  <suite name="Default suite" duration-ms="16847" started-at="2020-04-16T02:01:56 IST" finished-at="2020-04-16T02:02:13 IST">
+>>>>>>> 8496086c99e79c3142efab17c7aa706951b026cb
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test name="Test on CRM UI Automation using Cucumber" duration-ms="131969" started-at="2020-04-17T13:05:37 IST" finished-at="2020-04-17T13:07:49 IST">
       <class name="com.crm.cucumberOptions.TestRunner">
         <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="setUpClass" is-config="true" duration-ms="464" started-at="2020-04-17T13:05:37 IST" finished-at="2020-04-17T13:05:37 IST">
@@ -54,4 +59,31 @@
       </class> <!-- com.crm.cucumberOptions.TestRunner -->
     </test> <!-- Test on CRM UI Automation using Cucumber -->
   </suite> <!-- CRM Test Suite -->
+=======
+    <test name="Default test" duration-ms="16847" started-at="2020-04-16T02:01:56 IST" finished-at="2020-04-16T02:02:13 IST">
+      <class name="com.crm.ui.CRMAppAutomationTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="initialize" is-config="true" duration-ms="2116" started-at="2020-04-16T02:01:56 IST" finished-at="2020-04-16T02:01:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="addCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="addCRMCustomer" duration-ms="6190" started-at="2020-04-16T02:01:59 IST" finished-at="2020-04-16T02:02:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCRMCustomer -->
+        <test-method status="PASS" signature="deleteCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="deleteCRMCustomer" duration-ms="2312" started-at="2020-04-16T02:02:05 IST" finished-at="2020-04-16T02:02:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCRMCustomer -->
+        <test-method status="PASS" signature="updateCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="updateCRMCustomer" duration-ms="6058" started-at="2020-04-16T02:02:07 IST" finished-at="2020-04-16T02:02:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCRMCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@1d8d30f7]" name="tearDown" is-config="true" duration-ms="106" started-at="2020-04-16T02:02:13 IST" finished-at="2020-04-16T02:02:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.ui.CRMAppAutomationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> 8496086c99e79c3142efab17c7aa706951b026cb
 </testng-results>
