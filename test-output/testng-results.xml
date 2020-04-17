@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="CRM Test Suite" duration-ms="34607" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:58:22 IST">
+  <suite name="CRM Test Suite" duration-ms="131969" started-at="2020-04-17T13:05:37 IST" finished-at="2020-04-17T13:07:49 IST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Test on REST API" duration-ms="4807" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:57:52 IST">
-      <class name="com.crm.api.APIRequestTest">
-        <test-method status="PASS" signature="testDemo()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="testDemo" duration-ms="14" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:57:47 IST">
+    <test name="Test on CRM UI Automation using Cucumber" duration-ms="131969" started-at="2020-04-17T13:05:37 IST" finished-at="2020-04-17T13:07:49 IST">
+      <class name="com.crm.cucumberOptions.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="setUpClass" is-config="true" duration-ms="464" started-at="2020-04-17T13:05:37 IST" finished-at="2020-04-17T13:05:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDemo -->
-        <test-method status="PASS" signature="test_DELETERequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_DELETERequest" duration-ms="3809" started-at="2020-04-14T13:57:47 IST" finished-at="2020-04-14T13:57:51 IST">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="feature" duration-ms="45025" started-at="2020-04-17T13:05:37 IST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-17T13:06:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Add Customer Feature]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_DELETERequest -->
-        <test-method status="PASS" signature="test_GETRequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_GETRequest" duration-ms="146" started-at="2020-04-14T13:57:51 IST" finished-at="2020-04-14T13:57:51 IST">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="feature" duration-ms="52808" started-at="2020-04-17T13:06:22 IST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-17T13:07:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delete Customer Feature]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_GETRequest -->
-        <test-method status="PASS" signature="test_POSTRequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_POSTRequest" duration-ms="356" started-at="2020-04-14T13:57:51 IST" finished-at="2020-04-14T13:57:51 IST">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="feature" duration-ms="33456" started-at="2020-04-17T13:07:15 IST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-17T13:07:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Update Customer Feature]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_POSTRequest -->
-        <test-method status="PASS" signature="test_PUTRequest()[pri:0, instance:com.crm.api.APIRequestTest@3dfc5fb8]" name="test_PUTRequest" duration-ms="375" started-at="2020-04-14T13:57:51 IST" finished-at="2020-04-14T13:57:52 IST">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.crm.cucumberOptions.TestRunner@5bb21b69]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2020-04-17T13:07:49 IST" finished-at="2020-04-17T13:07:49 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_PUTRequest -->
-      </class> <!-- com.crm.api.APIRequestTest -->
-    </test> <!-- Test on REST API -->
-    <test name="Test on CRM UI Automation" duration-ms="29600" started-at="2020-04-14T13:57:52 IST" finished-at="2020-04-14T13:58:22 IST">
-      <class name="com.crm.ui.CRMAppAutomationTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="initialize" is-config="true" duration-ms="8411" started-at="2020-04-14T13:57:52 IST" finished-at="2020-04-14T13:58:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="addCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="addCRMCustomer" duration-ms="12059" started-at="2020-04-14T13:58:00 IST" finished-at="2020-04-14T13:58:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCRMCustomer -->
-        <test-method status="PASS" signature="deleteCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="deleteCRMCustomer" duration-ms="2468" started-at="2020-04-14T13:58:13 IST" finished-at="2020-04-14T13:58:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCRMCustomer -->
-        <test-method status="PASS" signature="updateCRMCustomer()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="updateCRMCustomer" duration-ms="6376" started-at="2020-04-14T13:58:15 IST" finished-at="2020-04-14T13:58:21 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateCRMCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.ui.CRMAppAutomationTest@371a67ec]" name="tearDown" is-config="true" duration-ms="273" started-at="2020-04-14T13:58:21 IST" finished-at="2020-04-14T13:58:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.ui.CRMAppAutomationTest -->
-    </test> <!-- Test on CRM UI Automation -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.crm.cucumberOptions.TestRunner -->
+    </test> <!-- Test on CRM UI Automation using Cucumber -->
   </suite> <!-- CRM Test Suite -->
 </testng-results>

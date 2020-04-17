@@ -1,4 +1,4 @@
-package com.crm.stepDefinations;
+package stepDefinations;
 
 import org.testng.Assert;
 
@@ -11,21 +11,9 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-public class StepDefination extends Base {
+public class AddCustomerStepDefination extends Base {
 	
-	@Given("^Initialize the browser with chrome$")
-	public void initialize_the_browser_with_chrome() throws Throwable {
-	    
-		driver = initializeDriver();
-	}
-
-	@Given("^Navigate to \"([^\"]*)\" Site$")
-	public void navigate_to_Site(String arg1) throws Throwable {
-	    
-		driver.get(prop.getProperty("url"));
-		
-		driver.manage().window().maximize();
-	}
+	
 
 	@Given("^Click on Add Customer Button to land on Add New Customer Form$")
 	public void click_on_Add_Customer_Button_to_land_on_Add_New_Customer_Form() throws Throwable {
@@ -43,28 +31,21 @@ public class StepDefination extends Base {
 	    
 		AddCustomerPage ac = new AddCustomerPage(driver);
 		
+		ac.getFirstName().clear();
 		ac.getFirstName().sendKeys(arg1);
 		Thread.sleep(1000);
 		
+		ac.getLastName().clear();
 		ac.getLastName().sendKeys(arg2);
 		Thread.sleep(1000);
 		
+		ac.getEmail().clear();
 		ac.getEmail().sendKeys(arg3);
 		Thread.sleep(1000);
 		
 		ac.getSubmitButton().click();
 	}
 
-	@Then("^Print Success Message$")
-	public void click_on_Add_Customer_Button() throws Throwable {
-		
-		System.out.println("User Added Successfully...");
-	}
-
-	@Then("^close browsers$")
-	public void close_browsers() throws Throwable {
-	    
-		driver.close();
-	}
+	
 
 }

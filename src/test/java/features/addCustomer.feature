@@ -1,6 +1,6 @@
-Feature: Login into Application
+Feature: Add Customer Feature
 
-Scenario Outline: Positive test validating login
+Scenario Outline: Positive test adding customer
 Given Initialize the browser with chrome
 And Navigate to "http://localhost:8082/customer/list" Site
 And Click on Add Customer Button to land on Add New Customer Form
@@ -12,3 +12,4 @@ Examples:
 |firstname			|lastname	|email						|
 |sachin				|bansode	|bansodesachin110@gmail.com	|
 |Vikram				|singh		|vikram.singh@gmail.com		|
+
